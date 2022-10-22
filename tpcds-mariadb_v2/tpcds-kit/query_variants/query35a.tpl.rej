@@ -1,0 +1,8 @@
+--- query_variants/query35a.tpl
++++ query_variants/query35a.tpl
+@@ -98,5 +98,3 @@
+           cd_dep_college_count
+  [_LIMITC];
+  
+-
+-define _END = "";
