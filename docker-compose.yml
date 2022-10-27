@@ -2,35 +2,8 @@
  services:
    tpcds_proxy:
      image: tpcds_benchmarking:2210
-    #  networks:
-    #    - test_network
      volumes:
-      #  self-signed testing wildcard ssl certificate
-       - /Users/Licious/project/ulb/dw/tpcds-benchmarking/tpcds-mariadb:/tpcds-mariadb
-     container_name: tpc_ds
-     ports:
-       - 3306:3306
-    #  extra_hosts:
-    #   - "host.docker.internal:host-gateway"
+       - tpcds-mariadb_v2:/tpcds-mariadb
+     container_name: tpcds_proxy
      entrypoint: /bin/bash
      tty: true
-
-   #===============#
-  #  # composer.test #
-  #  #===============#
-  #  composer.test:
-  #    image: composer/composer
-  #    networks:
-  #      - test_network
-  #    ports:
-  #      - "9001:9000"
-  #    volumes:
-  #      - "./composer:/composer"
-  #    container_name: composer.test
-  #    working_dir: /composer
-  #    command: install
-
-
- # networks
-#  networks:
-#    test_network:
