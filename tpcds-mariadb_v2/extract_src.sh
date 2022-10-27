@@ -7,4 +7,4 @@ then
 fi
 
 unzip $1
-mv v2.5.0rc2 tpcds-kit
+mv v3.2.0rc1 tpcds-kit
