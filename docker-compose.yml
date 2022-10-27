@@ -7,7 +7,7 @@
      volumes:
       #  self-signed testing wildcard ssl certificate
        - /Users/Licious/project/ulb/dw/tpcds-benchmarking/tpcds-mariadb:/tpcds-mariadb
-     container_name: tpcds_123
+     container_name: tpc_ds
      ports:
        - 3306:3306
     #  extra_hosts:
